@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Револьверы</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-position="inline">
+
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton">Меню</a>
+
+		<h1>Страны</h1>
+
+	</div>
+
+	<!-- Выезжающая панель слева -->
+	<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true">
+
+		<ul data-role="listview">
+
+			<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+
+			<li data-icon="false">
+				<a href="content/main/about.html" data-ajax="false" data-transition="none">О приложении</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="content/main/contact.html" data-ajax="false" data-transition="none">Контактная информация</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a>
+			</li>
+		</ul>	
+
+	</div>
+
+	<!-- Всплывающее окно: Оставить отзыв -->
+	<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+
+		<div data-role="header" data-theme="a">
+			<h1>Редирект</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">Переход на Play Market</h3>
+			<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+			<a href="https://play.google.com/store/apps/details?id=ru.revolver" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+		</div>
+
+	</div>
+
+	<!-- Контент -->
+	<div data-role="main" class="ui-content">
+
+		<ul data-role="listview" data-inset="false">
+
+			<li data-icon="carat-r">
+				<a href="content/austria/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/austria.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Австрия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/belgium/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/belgium.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Бельгия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/brazil/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/brazil.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Бразилия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/britain/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/britain.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Великобритания</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/germany/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/germany.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Германия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/italy/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/italy.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Италия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/russia/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/russia.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Россия</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/usa/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/usa.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Соединённые Штаты Америки</h2>
+				</a>
+			</li>
+
+			<li data-icon="carat-r">
+				<a href="content/france/list.html" data-transition="none" data-ajax="false">
+					<img src="images/flags/france.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Франция</h2>
+				</a>
+			</li>
+			
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
